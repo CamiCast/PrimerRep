@@ -1,0 +1,25 @@
+#titulo{
+    color: tomato;
+}
+/* ahora si*/
+p.texto{
+color:rgb(71, 58, 156)
+}
+p.especial{
+    color:aqua
+}
+
+div p {
+    color:cadetblue
+}
+
+/*mismo color en dos etiquetas*/
+div h2, div h3 {
+    color:chartreuse
+}
+
+/*aplica las propiedades unicamente si otro selector no las definio anteriormente*/
+*{
+    font-size: 24px;
+    color:black 
+}

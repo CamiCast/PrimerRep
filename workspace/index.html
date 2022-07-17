@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Libreria</title>
+    <style> 
+        table, th, td{
+            border: 2px solid red;
+        }
+    </style> <!--Intro de css solo en head se coloca esto-->
+</head>
+<body>
+        <!--con el metodo get se envian los valores de los campos por la url(hasta 250 caracteres)
+        y con post es otra forma guarda los datos en las cabeceras
+     en los inputs se puede agregar valores por defecto usando value antes de type
+    en text area solo se ponen al final los valores por defecto -->
+    <form action="/formulario" method="post">
+        <label for="nombre" >Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Cami" />
+        <label for="apellido"> Apellido </label>
+        <input type="text" id="apellido" apellido="apellido" placeholder="Castello">
+        <br>
+        <br>
+        <label> Password</label>
+        <input type="password" id="password" Password="password" placeholder="****">
+        <br>
+        <br>
+      
+        <label for="comentario">Comentarios</label>
+        <br>
+        <textarea rows="8" cols="60" id="comentario" placeholder="ingrese uncomentario" name="comentario"></textarea>
+        <br>
+        <input type="submit" />
+        <br>
+        <input type="date">  
+        <br>
+        <label>Mail</label>
+        <br>
+        <input type="email">
+        <br>
+        <!--Lista de opciones-->
+
+
+        <!--si en el input pongo type="submit" se convierte en un boton
+            por defecto ya viene para que sea un texto
+            tiene varios valores, email, password (blorquea los caracteres), radio, y checkbox, y file
+             placeholder da el ejemplo en el campo de nombre para guiar a el usuario-->
+             <br>
+             <button type="button">probandobotones</button>
+             <!--los botonnes submint no se le puede agregar etiquetas
+                 a los button no envia el formulario sin especificar el comportarmiento
+                a los reset deja el formulario con los valors por defecto
+                los submit tratan de enviar los formularios.
+                se pueden añador ptras etiquetas dentro de los botonos, incluso imagenes  
+                
+            -->
+            <button type="button">botonbutton</button>
+            <button type="reset">botonreset</button>
+            <button type="submit">botonsubmit</button>
+    </form>
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercercer heading</h3>
+    <h4>Hula</h4>
+    <h5>que tal</h5>
+    <h6>t6</h6>
+    <p>Aca van los parrafos</p>
+    <p>Otro parrafo</p>
+    <hr>
+    <h2>Otro titulo separado</h2>
+    <!--aca dejo un comentario
+    jeje -->
+    <p>Este es un texto de ejemplo, <span style="color:blue">mucho mas largo</span> 
+        <br>para usar la etiqueta de span</p>
+    <!-- cambie el color con css, br hago salto de linea -->
+    <label>Buscar en google</label>
+   
+    <a target="_blank" href="https://www.google.com">Ir a google</a>
+    <br>
+    
+
+<!--agregando el targer blank, redirijo a otra pestaña, 
+    sin eso se abre en mi mismo sitio-->
+    <img src="img/jinx-fortnite.jpg.webp" width="500"  />
+    <!-- height="500" puedo utilizar los dos comandos, opreferentemente de a 1-->
+
+  <br>
+  <br>
+  <!--Listas-->
+  <!--Listas no ordenadas (UL)-->
+  <h1>Listas no ordenadas:</h1>
+  <ul>
+      <li>Elemento1</li>
+      <li>Elemento2</li>
+      <li>Elemento3</li>
+  </ul>
+  <ul type="square">
+    <li>Elemento1</li>
+    <li>Elemento2</li>
+    <li>Elemento3</li>
+</ul>
+
+<ul type="circle">
+    <li>Elemento1</li>
+    <li>Elemento2</li>
+    <li>Elemento3</li>
+</ul>
+<h1>Listas ordenadas:</h1>
+<ol>
+    <li>Primero</li>
+    <li>Segundo</li>
+    <li>Tercero</li>
+</ol>
+<ol type="I"> <!--Ordenadas con numeros romanos-->
+    <li>Primero</li>
+    <li>Segundo</li>
+    <li>Tercero</li>
+</ol>
+<ol type="A"> <!--Ordenadas con letras-->
+    <li>Primero</li>
+    <li>Segundo</li>
+    <li>Tercero</li>
+</ol>
+<ol start="10"> <!--Lista que ordena a partir del numero 10-->
+    <li>Primero</li>
+    <li>Segundo</li>
+    <li>Tercero</li>
+</ol>
+
+<h1>Listas a n i d a d a s</h1>
+
+<ul>
+    <p>Libros</p>
+    <li>Los siente maridos de Evelyn Hugo</li>
+     <ol type="A">
+         <li>Taylor Jackins Reid</li>
+         <li>2011</li>
+         <li>380 paginas</li>
+        </ol>
+   >
+<li>Los siete locos</li>
+    <ol >
+        <li style="list-style-type: lower-alpha;">Roberto Arlt</li>
+        <li style="list-style-type: lower-roman;">2010</li>
+        <li>212 paginas</li>
+        </ol>
+   <!--style="list-style-type:;"
+    se utiliza para mixear diferentes tipos de simbolos para ordenar, ej numeros y letras, numeros simples y romanos
+        -->
+</ul>
+
+
+<h1>T A B L A S</h1>
+    <table style="width: 500px;">
+        <tr> <!--T r Filas, table road-->
+            <thead>
+            <th>Nombre</th>
+
+            <th>Apellido</th>
+            <th>ID</th>
+            <!--etiqueta th para columnas-->
+        </tr>
+    </thead>
+    <tbody>
+        <tr> <!-- td defini elemntos dentro de las columnas-->
+            <td>Camila</td>
+            <td>Castello</td>
+            <td>40884834</td>
+        </tr>
+        <tr> <!-- td defini elemntos dentro de las columnas-->
+            <td>Lucas</td>
+            <td>Lastra</td>
+            <td>12345678</td>
+        </tr>
+        <tr> <!-- td defini elemntos dentro de las columnas-->
+            <td>Camila Oriana </td>
+            <td>Castellloooo</td>
+            <td>12345678</td>
+        </tr>
+        <tfoot>
+            <td>CLC</td>
+            <td>CLC</td>
+            <td>dni</td>
+        </tfoot>
+    </tbody>
+
+    </table>
+</body>
+</html>
